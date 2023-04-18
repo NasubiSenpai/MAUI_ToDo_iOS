@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ToDoApp.Controls.Views.PopUpText">
    <Label x:Name="PopUpTxt"
-          Text="{Binding propPopUp}"
+          Text="{Binding UpperText}"
           HorizontalOptions="Center"
           VerticalOptions="Center" />
 </ContentView>

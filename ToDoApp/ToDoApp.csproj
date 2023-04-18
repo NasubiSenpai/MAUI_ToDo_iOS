@@ -68,8 +68,6 @@
 	  <None Remove="Controls\Models\" />
 	</ItemGroup>
 	<ItemGroup>
-	  <Folder Include="Controls\" />
 	  <Folder Include="Controls\Views\" />
-	  <Folder Include="Controls\Models\" />
 	</ItemGroup>
 </Project>
