@@ -11,7 +11,7 @@ namespace ToDoApp.Controls.Models
 {
     public partial class PopUpTextViewModel : ObservableObject
     {
-        private string _title;
+        private string _title = "";
         /// <summary>
         /// 変更通知プロパティ。
         /// [NotifyPropertyChangedFor(nameof(hoge))]属性で
