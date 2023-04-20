@@ -71,6 +71,12 @@
 	  <None Remove="Controls\Models\" />
 	</ItemGroup>
 	<ItemGroup>
+	  <Folder Include="Contents\Models\" />
 	  <Folder Include="Controls\Views\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <MauiXaml Update="Contents\Views\SettingPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 </Project>

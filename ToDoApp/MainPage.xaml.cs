@@ -14,11 +14,6 @@ public partial class MainPage : ContentPage
 		this.BindingContext = _viewModel;
 
 	}
-
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		
-	}
 }
 
 
