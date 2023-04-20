@@ -1,4 +1,7 @@
-﻿namespace ToDoApp;
+﻿using ToDoApp.Controls.Models;
+using ToDoApp.Controls.Views;
+
+namespace ToDoApp;
 
 public static class MauiProgram
 {
@@ -12,6 +15,9 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
+
+		builder.Services.AddSingleton<MainPage>()
+						.AddSingleton<MainWindowViewModel>();
 
 		return builder.Build();
 	}

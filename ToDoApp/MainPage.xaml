@@ -6,7 +6,8 @@
 
     <ScrollView>
         <VerticalStackLayout >
-            <cx:PopUpText />
+            <cx:PopUpText BindingContext="{Binding propPopUpTextViewModel}"
+                          />
         </VerticalStackLayout>
     </ScrollView>
 

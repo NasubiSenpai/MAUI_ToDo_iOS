@@ -11,7 +11,6 @@ namespace ToDoApp.Controls.Models
 {
     public partial class PopUpTextViewModel : ObservableObject
     {
-        private string _title = "";
         /// <summary>
         /// 変更通知プロパティ。
         /// [NotifyPropertyChangedFor(nameof(hoge))]属性で
@@ -21,12 +20,40 @@ namespace ToDoApp.Controls.Models
         [ObservableProperty]
         [NotifyPropertyChangedFor(nameof(propUpperText))]
         private string m_PopUpText = "hello, world";
-
         /// <summary>
         /// PopUPTextプロパティを大文字に変換して返す
         /// </summary>
         public string propUpperText => PopUpText.ToUpper();
-
+        /// <summary>
+        /// コントロールの高さ
+        /// </summary>
+        [ObservableProperty]
+        [NotifyPropertyChangedFor(nameof(propTextHeight))]
+        private double m_TextHeight = 200.0d;
+        /// <summary>
+        /// 参照先プロパティ
+        /// </summary>
+        public double propTextHeight => TextHeight;
+        /// <summary>
+        /// コントロールの横幅
+        /// </summary>
+        [ObservableProperty]
+        [NotifyPropertyChangedFor(nameof(propTextWidth))]
+        private double m_TextWidth = 200.0d;
+        /// <summary>
+        /// 参照先プロパティ
+        /// </summary>
+        public double propTextWidth => TextWidth;
+        /// <summary>
+        /// フォントサイズ
+        /// </summary>
+        [ObservableProperty]
+        [NotifyPropertyChangedFor(nameof(propTextFontSize))]
+        private double m_TextFontSize = 40.0d;
+        /// <summary>
+        /// 参照先プロパティ
+        /// </summary>
+        public double propTextFontSize => TextFontSize;
         /// <summary>
         /// 表示されているテキストを返す
         /// </summary>

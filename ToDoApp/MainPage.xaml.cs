@@ -2,11 +2,17 @@
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
-
-	public MainPage()
+	
+	/// <summary>
+	/// メインウインドウViewmodel
+	/// </summary>
+	/// <param name="_viewModel">DIコンテナのVMをコンストラクタとして注入</param>
+	public MainPage(MainWindowViewModel _viewModel)
 	{
 		InitializeComponent();
+		//BindingContext -> WPFでいうDataContext
+		this.BindingContext = _viewModel;
+
 	}
 
 	private void OnCounterClicked(object sender, EventArgs e)

@@ -5,6 +5,9 @@
    <Label x:Name="PopUpTxt"
           Text="{Binding propUpperText}"
           HorizontalOptions="Center"
-          VerticalOptions="Center" />
+          VerticalOptions="Center"
+          HeightRequest="{Binding propTextHeight}"
+          WidthRequest="{Binding propTextWidth}"
+          FontSize="{Binding propTextFontSize}"/>
 </ContentView>
 
